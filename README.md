@@ -1,5 +1,5 @@
 # Atlas Stitch CRUD
-This is a CRUD (Create, Read, Update, Delete) for Atlas Realm/Stitch.
+This is a CRUD (Create, Read, Update, Delete) for Atlas Realm/Stitch connected MongoDB.
 
 ## Preparation
 1. Create your Project, Cluster, Database, and Stitch App on MongoDB Atlas
@@ -11,27 +11,19 @@ This is a CRUD (Create, Read, Update, Delete) for Atlas Realm/Stitch.
 git clone https://github.com/rikyperdana/stitch-crud myStitch
 cd myStitch && python -m SimpleHTTPServer
 ```
-Go to http://localhost:8000
-
-OR
-
-Head to [demo page](https://rikyperdana.github.io/stitch-crud/)
+Go to http://localhost:8000 OR head to [demo page](https://rikyperdana.github.io/stitch-crud/)
 
 ## How to Use
 - Only for the first time, fill the form with your Stitch App ID and database name
 - Click 'Get Collection' button and fill the database and collection name as target
 - Use 'Refresh' button to reload the collection from source
 - Use 'Add' to insert a new object into the collection
-- Double click a row to display the 'Update' and 'Delete' function
+- Click a row to display the 'Update' and 'Delete' function
 - Use Export button to get the csv of the loaded collection
 - Use Import button to insert all the contents of the Exported csv
 
 ## Dependencies
-### Server Side
-- ServestJS
-- Deno Mongo
-- Deno dotenv
-### Client Side
+- Atlas Stitch SDK
 - Lodash
 - Mithril
 - Bulma CSS
