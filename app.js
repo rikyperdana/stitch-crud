@@ -133,7 +133,7 @@ m.mount(document.body, {view: () => m('.container', m('.content',
     m('thead', m('tr', m('th', '#'), m('th', 'Document'))),
     m('tbody', (state.searchResults || state.collData || []).map((i, j) => m('tr',
       {
-        onclick: () => state.modalItem = m('.box',
+        ondblclick: () => state.modalItem = m('.box',
           m(autoForm({
             id: 'updateItem',
             schema:{ content: {
